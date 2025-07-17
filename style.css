@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*-----Загальні стилі-----*/
+
+body {
+   font-family: 'Roboto', 'Noto Sans', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+   max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
