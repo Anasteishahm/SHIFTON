@@ -14,7 +14,7 @@ body {
 }
 
 p {
-    color: black;
+    color: #000000;
     font-size: 18px;
 }
 
@@ -29,10 +29,11 @@ button {
     height: 74px;
 }
 
-.container {
+.header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /*padding: 30px 0 26px;*/
 }
 
 .header__nav ul {
@@ -49,7 +50,16 @@ button {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.36px;
+    transition: color 0.2s;
     /*transition: color 0.2s;*/
+}
+
+.header__nav a:hover {
+    color: #29AAE3;
+}
+
+.header__nav a:active {
+    color: #116184;
 }
 
 .language-switcher {
@@ -58,14 +68,13 @@ button {
     align-items: center;
 }
 
-.language-toggle {
-}
+/*------WELCOME------*/
 
-.fas {
-}
-
-.fa-globe {
-}
-
-.sr-only {
+.welcome {
+    min-height: 600px;
+    height: 100vh;
+    padding: 195px 0;
+    /*background-position: center;*/
+    background-size: cover;
+    background-image: url("./images/main-foto.png");
 }
