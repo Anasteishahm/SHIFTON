@@ -19,8 +19,16 @@ p {
     margin: 0;
 }
 
-button {
-    color: red;
+.btn {
+    padding: 12px 30px;
+    border-radius: 26px;
+    background-color: #54A757;
+    box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.10);
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFF;
 }
 
 /*------HEADER------*/
@@ -62,6 +70,27 @@ button {
     color: #116184;
 }
 
+.header__btn {
+    background-color: #29AAE3;
+}
+
+.header__select {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+.header__select-option {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
 .language-switcher {
     display: flex;
     gap: 10px;
@@ -79,7 +108,37 @@ button {
     box-sizing: border-box;
     min-height: calc(100vh - 74px);
     background-image: url("./images/main-foto.jpg");
+    background-color: #116184;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.welcome__container {
+    /*width: 730px;*/
+    padding-top: 265px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.welcome__heading {
+    max-width: 730px;
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 32px;
+    color: #FFFFFF;
+}
+
+.welcome__text {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: #FFF;
+}
+
+.welcome__text-last {
+    margin-bottom: 32px;
+}
+
+.welcome__button {
+
 }
