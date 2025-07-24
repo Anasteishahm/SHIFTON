@@ -142,3 +142,24 @@ p {
 .welcome__button {
 
 }
+
+.card__disc {
+    /*list-style-type: disc;*/
+    padding-left: 0;
+}
+
+.card__disc li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 5px;
+    color: red;
+}
+
+.card__disc li::before {
+    content: ".";
+    color: orange;
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+    line-height: 1.2;
+}
