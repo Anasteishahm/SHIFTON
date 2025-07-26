@@ -143,23 +143,77 @@ p {
 
 }
 
-.card__disc {
-    /*list-style-type: disc;*/
-    padding-left: 0;
+.opportunities {
+    padding-top: 100px;
+}
+
+.opportunities__title {
+    color: #434449;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.card {
+    width: 310px;
+    height: 602px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #F9F9F9;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.10);
+    /*padding-top: 32px;*/
+    padding-left: 26px;
+    padding-bottom: 21px;
+}
+
+.card__img {
+
+}
+
+/*.opportunities__img-wrap {*/
+/*    background-color: #54A757;*/
+/*    width: 80px;*/
+/*    height: 80px;*/
+/*}*/
+
+/*.card__img {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*}*/
+
+.card__title {
+    color: #29AAE3;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.card__title2 {
+    color: #434449;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .card__disc li {
-    position: relative;
-    padding-left: 20px;
-    margin-bottom: 5px;
-    color: red;
+    margin-bottom: 12px;
 }
 
-.card__disc li::before {
-    content: ".";
-    color: orange;
-    position: absolute;
-    left: 0;
-    font-size: 1.2em;
-    line-height: 1.2;
+.list-disc {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background-color: #29AAE3;
+    margin-right: 12px;
+    border-radius: 50%;
 }
+
+.opportunities__cards {
+    background-color: #9FCFA1;
+}
+
+.card-btn {
+    margin-top: 112px;
+}
+
+
