@@ -59,7 +59,6 @@ p {
     font-weight: 700;
     letter-spacing: 0.36px;
     transition: color 0.2s;
-    /*transition: color 0.2s;*/
 }
 
 .header__nav a:hover {
@@ -115,7 +114,6 @@ p {
 }
 
 .welcome__container {
-    /*width: 730px;*/
     padding-top: 265px;
     font-family: 'Roboto', sans-serif;
 }
@@ -139,60 +137,50 @@ p {
     margin-bottom: 32px;
 }
 
-.welcome__button {
-
-}
-
 .opportunities {
     padding-top: 100px;
 }
 
 .opportunities__title {
     color: #434449;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 36px;
     font-weight: 500;
+    text-align: center;
+    /*width: 362px;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
 }
 
 .card {
     width: 310px;
     height: 602px;
-    flex-shrink: 0;
     border-radius: 20px;
     background: #F9F9F9;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.10);
-    /*padding-top: 32px;*/
     padding-left: 26px;
     padding-bottom: 21px;
 }
 
 .card__img {
-
+    /*margin-left: -25px;*/
+    /*margin-top: 15px;*/
 }
-
-/*.opportunities__img-wrap {*/
-/*    background-color: #54A757;*/
-/*    width: 80px;*/
-/*    height: 80px;*/
-/*}*/
-
-/*.card__img {*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*}*/
 
 .card__title {
     color: #29AAE3;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 22px;
     font-weight: 900;
+    margin-bottom: 23px;
 }
 
 .card__title2 {
     color: #434449;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 500;
+    margin-bottom: 26px;
 }
 
 .card__disc li {
@@ -209,11 +197,15 @@ p {
 }
 
 .opportunities__cards {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 46px;
     background-color: #9FCFA1;
 }
 
 .card-btn {
-    margin-top: 112px;
+    margin-top: 70px;
 }
 
 
