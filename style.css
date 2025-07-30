@@ -20,6 +20,7 @@ p {
 }
 
 .btn {
+    width: max-content;
     padding: 12px 30px;
     border-radius: 26px;
     background-color: #54A757;
@@ -137,6 +138,8 @@ p {
     margin-bottom: 32px;
 }
 
+/*-------SECTION OPPORTUNITIES-------*/
+
 .opportunities {
     padding-top: 100px;
 }
@@ -147,24 +150,21 @@ p {
     font-size: 36px;
     font-weight: 500;
     text-align: center;
-    /*width: 362px;*/
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     width: 310px;
     height: 602px;
     border-radius: 20px;
     background: #F9F9F9;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.10);
-    padding-left: 26px;
-    padding-bottom: 21px;
+    padding: 26px;
 }
 
 .card__img {
-    /*margin-left: -25px;*/
-    /*margin-top: 15px;*/
+    margin-bottom: 23px;
 }
 
 .card__title {
@@ -181,18 +181,37 @@ p {
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 26px;
+
+    /*display: flex;*/
+    /*align-items: center;*/
+}
+
+/*.card__title2-centre {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+
+.card__content {
+    flex-grow: 1;
 }
 
 .card__disc li {
+    position: relative;
+    padding-left: 16px;
     margin-bottom: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #434449;
 }
 
-.list-disc {
-    display: inline-block;
+.card__disc li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.4em;
     width: 9px;
     height: 9px;
     background-color: #29AAE3;
-    margin-right: 12px;
     border-radius: 50%;
 }
 
@@ -201,11 +220,34 @@ p {
     flex-direction: row;
     gap: 12px;
     margin-top: 46px;
-    background-color: #9FCFA1;
+    padding-bottom: 100px;
+    /*background-color: #9FCFA1;*/
 }
 
-.card-btn {
-    margin-top: 70px;
+/*------SECTION CREATION-------*/
+
+.creation {
+    background-color: #F5F6F6;
+    padding-top: 100px;
 }
 
+.creation__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.creation__title {
+    color: #29AAE3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.creation__btn {
+    background-color: #29AAE3;
+}
+
+.creation__bloc {
+}
 
