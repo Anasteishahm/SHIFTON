@@ -180,16 +180,16 @@ p {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 500;
-    margin-bottom: 26px;
-
     /*display: flex;*/
     /*align-items: center;*/
 }
 
-/*.card__title2-centre {*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*}*/
+.card__title2-centre {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 26px;
+}
 
 .card__content {
     flex-grow: 1;
@@ -231,22 +231,28 @@ p {
     padding-top: 100px;
 }
 
-.creation__container {
+.creation .container {
+    background-color: #434449;
+    opacity: 0.8;
+}
+
+.creation__container, .optimization__container, .management__container {
     display: flex;
     gap: 120px;
     justify-content: space-between;
     padding-bottom: 100px;
 }
 
-.creation__title {
+.creation__title, .management__title, .optimization__title {
     color: #29AAE3;
+    margin-bottom: 58px;
     font-family: 'Roboto', sans-serif;
     font-size: 36px;
     font-weight: 500;
     text-align: center;
 }
 
-.creation__description {
+.creation__description, .optimization__description, .management__description {
     color: #000000;
     font-size: 18px;
     font-weight: 400;
@@ -254,7 +260,7 @@ p {
     /*max-width: 475px;*/
 }
 
-.creation__bloc {
+.creation__bloc, .optimization__bloc, .management__bloc {
     padding-top: 134px;
 
 }
@@ -266,11 +272,11 @@ p {
 .ellipse {
     /*position: absolute;*/
     /*z-index: 5;*/
-    width: 600px;
-    height: 255px;
-    transform: rotate(171.004deg);
-    fill: #29AAE3;
-    opacity: 0.4;
+    /*width: 600px;*/
+    /*height: 255px;*/
+    /*transform: rotate(171.004deg);*/
+    /*fill: #29AAE3;*/
+    /*opacity: 0.4;*/
     /*flex-shrink: 0;*/
 }
 
@@ -284,14 +290,54 @@ p {
 }
 
 .creating__img {
-    /*position: absolute;*/
+    position: absolute;
+    bottom: 42px;
+    left: 52px;
     /*z-index: 10;*/
 }
 
 .creation__index {
     position: relative;
+    width: 616px;
+    height: 280px;
+    margin-top: 162px;
+    background-color: #9033F9;
 }
 
 .creation__description {
     margin-bottom: 40px;
+}
+
+/*---------OPTIMIZATION--------*/
+
+.optimization {
+    padding-top: 100px;
+    background-color: #FFFFFF;
+}
+
+.optimization__title {
+    color: #9033F9;
+}
+
+.optimization__btn {
+    background-color: #9033F9;
+}
+
+.optimization {
+
+}
+
+/*---------MANAGEMENT--------*/
+
+.management {
+    padding-top: 100px;
+    background-color: #F5F6F6;
+}
+
+.management__title {
+    color: #FF5966;
+}
+
+.management__btn {
+    background-color: #FF5966;
 }
