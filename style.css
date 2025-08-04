@@ -392,14 +392,14 @@ p {
 
 .social-question-link {
     color: #29AAE3;
-    opacity: 0.8;
     transition: color 0.2s;
 }
 
-.social-question-link a:hover {
+.social-question-link:hover {
     color: #29AAE3;
+    opacity: 0.8;
 }
 
-.social-question-link a:active {
+.social-question-link:active {
     color: #116184;
 }
