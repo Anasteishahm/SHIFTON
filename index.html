@@ -12,7 +12,7 @@
 <body>
 <header class="header">
     <div class="container header__container">
-        <img src="./images/logo.png" alt="logo">
+        <img class="header__logo" src="./images/logo.png" alt="logo">
         <nav class="header__nav">
             <ul>
                 <li><a href="#!">Home</a></li>
@@ -75,7 +75,7 @@
                             </li>
                         </ul>
                     </div>
-                    <button class="btn">More details</button>
+                    <button class="btn btn__card">More details</button>
                 </div>
 
                 <div class="card">
@@ -103,7 +103,7 @@
                             </li>
                         </ul>
                     </div>
-                    <button class="btn">More details</button>
+                    <button class="btn btn__card">More details</button>
                 </div>
 
                 <div class="card">
@@ -128,7 +128,7 @@
                             </li>
                         </ul>
                     </div>
-                    <button class="btn">More details</button>
+                    <button class="btn btn__card">More details</button>
                 </div>
 
                 <div class="card">
@@ -150,7 +150,7 @@
                             </li>
                         </ul>
                     </div>
-                    <button class="btn">More details</button>
+                    <button class="btn btn__card">More details</button>
                 </div>
             </div>
         </div>
@@ -187,8 +187,7 @@
                     <button class="btn optimization__btn">Start working</button>
                 </div>
                 <div class="optimization__index">
-                    <img class="optimization__img" src="./images/Group%20106.svg" alt="">
-                    <img class="ellipse" src="./images/Ellipse-optim.svg" alt="">
+                    <img class="optimization__img" src="images/Optimization.svg" alt="">
                 </div>
             </div>
         </div>
@@ -239,14 +238,26 @@
                 Write to us in the chat or email <a class="social-question-link" href="mailto:support@shifton.com">support@shifton.com</a>
             </p>
             <ul class="socials">
-                <li><a href="#!" class="socials__link"><img class="socials__icon" src="./images/Facebook.svg"
-                                                            alt=""></a></li>
-                <li><a href="#!" class="socials__link"><img class="socials__icon" src="./images/Twitter.svg"
-                                                            alt=""></a></li>
-                <li><a href="#!" class="socials__link"><img class="socials__icon" src="./images/Linkedin.svg"
-                                                            alt=""></a></li>
-                <li><a href="#!" class="socials__link"><img class="socials__icon" src="./images/Youtube.svg"
-                                                            alt=""></a></li>
+                <li>
+                    <a href="#!" class="socials__link">
+                        <img class="socials__icon" src="./images/Facebook.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#!" class="socials__link">
+                        <img class="socials__icon" src="./images/Twitter.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#!" class="socials__link">
+                        <img class="socials__icon" src="./images/Linkedin.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#!" class="socials__link">
+                        <img class="socials__icon" src="./images/Youtube.svg" alt="">
+                    </a>
+                </li>
             </ul>
         </div>
     </section>
@@ -254,17 +265,20 @@
 
 <footer class="footer">
     <div class="container">
-        <div class="footer__nav">
-            <p class="footer__nav">Features</p>
-            <p class="footer__nav">Blog</p>
-            <p class="footer__nav">FAQ</p>
-        </div>
+        <nav>
+            <ul class="footer__nav">
+                <li class="footer__nav-item"><a href="#!">Features</a></li>
+                <li class="footer__nav-item"><a href="#!">Blog</a></li>
+                <li class="footer__nav-item"><a href="#!">FAQ</a></li>
+            </ul>
+        </nav>
+        <hr class="horizontal">
         <div class="cta__links">
             <a href="#!" class="cta__link">
-                <img src="images/google-play-badge%201.svg" alt="" class="cta__img">
+                <img src="images/googleplay.svg" alt="" class="cta__img">
             </a>
             <a href="#!" class="cta__link">
-                <img src="images/App_Store%201.svg" alt="" class="cta__img">
+                <img src="images/appstore.svg" alt="" class="cta__img">
             </a>
         </div>
         <p class="footer__sentence">Copyright 2017-2021, Shifton. All rights reserved.</p>
