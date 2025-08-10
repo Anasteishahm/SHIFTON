@@ -12,23 +12,32 @@
 <body>
 <header class="header">
     <div class="container header__container">
-        <img class="header__logo" src="./images/logo.png" alt="logo">
-        <nav class="header__nav">
-            <ul>
-                <li><a href="#!">Home</a></li>
-                <li><a href="#!">Tariffs</a></li>
-                <li><a href="#!">Opportunities</a></li>
-                <li><a href="#!">Vlog</a></li>
-                <li><a href="#!">FAQ</a></li>
-                <li><a href="#!">Login</a></li>
-            </ul>
-        </nav>
-        <button class="btn header__btn">sign up</button>
-        <select name="lang" class="header__select">
-            <option class="header__select-option" value="en">Eng</option>
-            <option class="header__select-option" value="ua">Uk</option>
-            <option class="header__select-option" value="es">Sp</option>
-        </select>
+        <div class="logo__wrap">
+            <a href="index.html" class="header__logo">
+                <img src="./images/logo.png" alt="Logo">
+            </a>
+            <button type="button" class="menu-icon">
+                <div class="menu-icon__line"></div>
+            </button>
+        </div>
+        <div class="header__right-content">
+            <nav>
+                <ul class="header__nav">
+                    <li><a href="#!">Home</a></li>
+                    <li><a href="#!">Tariffs</a></li>
+                    <li><a href="#!">Opportunities</a></li>
+                    <li><a href="#!">Vlog</a></li>
+                    <li><a href="#!">FAQ</a></li>
+                    <li><a href="#!">Login</a></li>
+                </ul>
+            </nav>
+            <button class="btn header__btn">sign up</button>
+            <select name="lang" class="header__select">
+                <option class="header__select-option" value="en">Eng</option>
+                <option class="header__select-option" value="ua">Uk</option>
+                <option class="header__select-option" value="es">Sp</option>
+            </select>
+        </div>
     </div>
 </header>
 
@@ -287,5 +296,7 @@
         </div>
     </div>
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
