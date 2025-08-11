@@ -50,6 +50,7 @@ p {
 }
 
 .header__container {
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,6 +103,10 @@ p {
 .header__select-option {
     background-color: #f0f0f0;
     color: #333;
+}
+
+.header__btn-wrap {
+    display: none;
 }
 
 .logo__wrap {
@@ -526,7 +531,7 @@ p {
 }
 
 .menu-icon {
-    display: none;
+    /*display: none;*/
 }
 
 @media (max-width: 1000px) {
@@ -550,9 +555,9 @@ p {
         height: 400px;
     }
 
-    .menu-icon {
+    .header__btn-wrap {
         display: block;
-        grid-area: menu-icon;
+        /*grid-area: menu-icon;*/
     }
 
     .header--mobile {
@@ -560,15 +565,14 @@ p {
     }
 
     .header--mobile .header__nav {
-        display: block;
-    }
-
-    .header--mobile .header__nav li:not(:last-child) {
-        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7px;
     }
 
     .header--mobile .header__nav a {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .header__nav-wrap {
@@ -577,13 +581,61 @@ p {
         display: flex;
         align-items: center;
         justify-content: center;
+        background-color: #29AAE3;
+    }
+
+    .header__right-content {
+        display: none;
+    }
+
+    .logo__wrap {
+        width: 100%;
+        align-items: center;
+        /*padding: 20px 0;*/
+    }
+
+    .no-scroll {
+        overflow: hidden;
+    }
+
+    .header--mobile .header__right-content {
+        display: flex;
+        flex-direction: column;
+        /*margin: 0 auto;*/
+        /*width: max-content;*/
+        background-color: #9033F9;
+    }
+
+    .header--mobile .header__container {
+        display: block;
+    }
+
+    .header--mobile .header__right-content .header__select {
+        display: none;
+    }
+
+    .header--mobile .header__right-content .header__btn {
+        width: 100%;
+    }
+
+    .header__btn-wrap {
+        display: flex;
+        gap: 20px;
+    }
+
+    .header--mobile .logo__wrap .header__logo {
+        visibility: hidden;
+    }
+
+    .header--mobile .logo__wrap {
+        padding: 17px 0;
     }
 }
 
 @media (max-width: 600px) {
     .header__logo {
         width: 86px;
-        height: 25px;
+        /*height: 25px;*/
     }
 
     .welcome__heading {
