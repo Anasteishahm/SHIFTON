@@ -11,7 +11,6 @@ body {
     max-width: 1230px;
     padding: 0 15px;
     margin: 0 auto;
-    /*background-color: #333333;*/
 }
 
 p {
@@ -94,6 +93,7 @@ p {
     font-weight: 700;
     letter-spacing: 0.36px;
     text-transform: uppercase;
+    outline: none;
 
     padding: 10px;
     background-color: transparent;
@@ -224,7 +224,6 @@ p {
     top: 0.4em;
     width: 9px;
     height: 9px;
-    /*background-color: #29AAE3;*/
     border-radius: 50%;
 }
 
@@ -432,8 +431,8 @@ p {
 
 .footer__transition:not(:last-child)::after {
     content: "|";
-    padding-left: 20px; /* Відстань після палички */
-    color: #FFFFFF; /* Колір палички */
+    padding-left: 20px;
+    color: #FFFFFF;
 }
 
 .horizontal {
@@ -465,8 +464,6 @@ p {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        /*justify-content: space-between;*/
-        /*padding-bottom: 70px;*/
     }
 
     .management__img {
@@ -530,10 +527,6 @@ p {
     transition: bottom 0.3s, transform 0.3s 0.3s;
 }
 
-.menu-icon {
-    /*display: none;*/
-}
-
 @media (max-width: 1000px) {
     .opportunities__cards {
         justify-content: space-evenly;
@@ -557,7 +550,6 @@ p {
 
     .header__btn-wrap {
         display: block;
-        /*grid-area: menu-icon;*/
     }
 
     .header--mobile {
@@ -581,7 +573,6 @@ p {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #29AAE3;
     }
 
     .header__right-content {
@@ -591,7 +582,6 @@ p {
     .logo__wrap {
         width: 100%;
         align-items: center;
-        /*padding: 20px 0;*/
     }
 
     .no-scroll {
@@ -601,9 +591,6 @@ p {
     .header--mobile .header__right-content {
         display: flex;
         flex-direction: column;
-        /*margin: 0 auto;*/
-        /*width: max-content;*/
-        background-color: #9033F9;
     }
 
     .header--mobile .header__container {
@@ -615,7 +602,7 @@ p {
     }
 
     .header--mobile .header__right-content .header__btn {
-        width: 100%;
+        width: 40%;
     }
 
     .header__btn-wrap {
@@ -634,8 +621,7 @@ p {
 
 @media (max-width: 600px) {
     .header__logo {
-        width: 86px;
-        /*height: 25px;*/
+        width: 130px;
     }
 
     .welcome__heading {
@@ -676,7 +662,6 @@ p {
 
     .creation__index {
         max-width: 80%;
-        background-color: #9033F9;
     }
 
     .shifton__video {
@@ -686,9 +671,6 @@ p {
 
     .video__container {
         padding-bottom: 40px;
-        background-color: #29AAE3;
-        /*width: 330px;*/
-        /*height: 185px;*/
     }
 
     .creation__description, .optimization__description, .management__description {
@@ -697,6 +679,11 @@ p {
 }
 
 @media (max-width: 400px) {
+
+    .header--mobile .header__right-content .header__btn {
+        width: 100%;
+    }
+
     .shifton__video {
         height: 200px;
     }
@@ -707,7 +694,7 @@ p {
     }
 
     .footer__transition:not(:last-child)::after {
-        padding-left: 15px; /* Відстань після палички */
+        padding-left: 15px;
     }
 
     .footer__sentence, .footer__transition {
